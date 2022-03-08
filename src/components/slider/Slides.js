@@ -1,12 +1,15 @@
 import React from "react";
+import proyecto1 from '../../assest/proyecto1.PNG'
+
 import cara1 from '../../assest/cara1.jpg'
 import cara3 from '../../assest/cara3.jpg'
+
 import './Slider.css'
 
 // console.log(slidesInfo)
 const slidesInfo = [
     {
-        src: cara1,
+        src: proyecto1,
         alt: "image",
         desc: "proyect 1"
     },

@@ -11,7 +11,6 @@ const Slider = () => {
                 <h2>My Projects</h2>
             </div>
             <Carousel plugins={["arrows", "infinite"]}
-                arrows
                 slidesPerPage={4}
                 infinite
                 animationSpeed={200}
@@ -19,6 +18,14 @@ const Slider = () => {
                 offset={50}
                 itemWidth={400}
                 slides={Slides}
+                breakpoints= {{
+                    960:{
+                        slidesPerPage: 1,
+                        arrows:false,
+                        itemWidth: 250
+                    }
+                }
+                }
 
             />
 

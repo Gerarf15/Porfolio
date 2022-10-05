@@ -10,8 +10,12 @@ const Slider = () => {
             <div className='carousel-title'>
                 <h2>My Projects</h2>
             </div>
-            <Carousel plugins={["arrows", "infinite"]}
-                slidesPerPage={4}
+            <div className='slides_container'>
+            {Slides}
+
+            </div>
+            {/* <Carousel plugins={["arrows", "infinite"]}
+                slidesPerPage={3}
                 infinite
                 animationSpeed={200}
                 centered
@@ -27,8 +31,7 @@ const Slider = () => {
                 }
                 }
 
-            />
-
+            /> */}
 
         </div>
     )

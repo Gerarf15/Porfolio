@@ -1,40 +1,47 @@
 import React from "react";
-import proyecto1 from '../../assest/proyecto1.PNG'
-
-import cara1 from '../../assest/cara1.jpg'
-import cara3 from '../../assest/cara3.jpg'
+import weather from '../../assest/weather.png'
+import todo from '../../assest/todo.png'
+import country from '../../assest/countrys.png'
+import color from '../../assest/color.png'
 
 import './Slider.css'
 
 // console.log(slidesInfo)
 const slidesInfo = [
     {
-        src: proyecto1,
+        src: country,
         alt: "image",
-        desc: "proyect 1"
+        desc: "Countrys",
+        url: "https://country-kappa.vercel.app/"
     },
     {
-        src: cara3,
+        src: weather,
         alt: "image",
-        desc: "proyect 2"
+        desc: "The Weather",
+        url: "https://cranky-brahmagupta-3d1e01.netlify.app/"
     },
     {
-        src: cara1,
+        src: todo,
         alt: "image",
-        desc: "proyect 3"
+        desc: "To do list",
+        url: "https://amazing-wozniak-7c3e5a.netlify.app/"
     },
     {
-        src: cara3,
+        src: color,
         alt: "image",
-        desc: "proyect 2"
-    }
+        desc: "ColorGame",
+        url: "https://vigilant-cray-cbc9e6.netlify.app/"
+    },
+    
 ]
-
 const slides = slidesInfo.map(slide => (
     <div className="slide-container">
+        <div className="img_container">
         <img src={slide.src} alt={slide.alt}></img>
+        </div>
         <div className="slide-desc">
             <span>{slide.desc}</span>
+        <a href={slide.url} target="_blank" className="proyect_contain">visitar</a>
         </div>
     </div>
 ))

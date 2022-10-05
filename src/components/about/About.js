@@ -1,16 +1,16 @@
 import React from 'react'
 import './About.css'
-import imgAbout from '../../assest/imgAbout.gif'
+import foto2 from '../../assest/foto2.jpg'
 
 const About = () => {
   return (
     <div className='about-container'>
         <div className='about-desc'>
-            <h3>...let me tell you something about me</h3>
-            <p>sdfa sf asfasfda asfasd  asf asdf as fasf asf as afdsfasfsa as fsaf asfasf as sfsa safdasf asdf saf asdf asf afd adf</p>
+            <h3>...dejame decirte algo sobre mi</h3>
+            <p>Con mucho esfuerzo y sacrificio logré finalizar el bootcamp de Henry, pero no solo me quedaré con eso, ahora voy por más y a seguir aprendiendo cosas nuevas y mejorando en lo que ya tengo conocimientos.</p>
         </div>
         <div className='about-img'>
-            <img src={imgAbout} alt='about'/>
+            <img src={foto2} alt='about' width="300" height="300"/>
 
         </div>
     </div>

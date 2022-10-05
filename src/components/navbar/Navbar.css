@@ -16,8 +16,16 @@
 }
 
 .navbar-logo{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
     height: 60px;
     line-height: 60px;
     color: white;
     cursor: pointer;
+}
+
+.nav_rigth span{
+    /* border: 2px solid red; */
+    margin: 10px;
 }
